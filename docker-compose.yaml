@@ -1,0 +1,31 @@
+version: '3'
+services:
+  json-server:
+    image: codfish/json-server
+    command: npm run dev
+    volumes:
+      - ./db.js:/app/db.js
+    environment:
+      VIRTUAL_HOST: json-server
+      HOST: json-server
+
+      NO_CORS: true
+    ports:
+      - 8181:80
+
+
+  hais-manager:
+    entrypoint: "dotnet watch run --urls http://*:8080"
+    env_file: .env
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
+    depends_on:
+      - json-server
+    working_dir: /app/HaisManager/
+
+  
