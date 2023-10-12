@@ -1,0 +1,81 @@
+# .gitignore for .NET projects
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific directories
+_ReSharper.*
+node_modules
+.vscode
+.idea
+
+# Compiled binary files
+bin/
+obj/
+Debug/
+Release/
+
+# Visual Studio files
+.vscode/
+.vs
+.vscode
+.vscode-test
+.vscode-test-staging
+
+# Rider files
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet package directories
+packages/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Mac desktop service store files
+.DS_Store
+
+# Logs
+*.log
+
+# Binaries for programs and plugins
+*.exe
+*.com
+*.dll
+*.bat
+*.msi
+*.swp
+
+# Package files
+*.nupkg
+*.pupkg
+*.snupkg
+
+# Compressed files
+*.zip
+*.rar
+*.gz
+*.tar.gz
+*.7z
+
+# Other files
+obj/
+
